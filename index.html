@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>simplifii</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
   </head>
   <body>
     <nav>
       <ul class="nav-left-section">
         <li><img src="./nav-logo.png" height="30px" alt="" /></li>
         <li>infollion Prototype</li>
-        <li>></li>
+        <li><img src="./r-angle.png" height="18px" alt="" /></li>
         <li><strong>Calendar Time Slot</strong></li>
       </ul>
       <ul class="nav-right-section">
-        <li class="size"><span>51.9%</span> <span>^</span></li>
+        <li class="size">
+          <span>51.9%</span><span><img src="./d-angle.png" alt="" /></span>
+        </li>
         <li><img src="./full-screen.png" alt="" /></li>
         <li><img src="./question-mark.png" height="30px" alt="" /></li>
         <li>Sign in</li>
@@ -34,21 +39,27 @@
                 <div class="select-timezone">
                   <p>Select Timezone</p>
                   <div class="timezone">
-                    <input type="text" />
+                    <select name="" id="">
+                      <option value="">India (GMP +5:30)</option>
+                    </select>
                   </div>
                 </div>
                 <div class="select-slot">
                   <p>Select Slot</p>
                   <div class="slot">
-                    <input type="text" />
+                    <select name="" id="">
+                      <option value="">45 min</option>
+                    </select>
                   </div>
                 </div>
                 <div class="cal">
                   <div class="cal-month-row">
-                    <div>MAY 2020</div>
+                    <div>
+                      MAY 2020 <img src="d-angle.png" height="6px" alt="" />
+                    </div>
                     <div class="cal-angles">
-                      <div><</div>
-                      <div>></div>
+                      <div><img src="l-angle.png" height="12px" alt="" /></div>
+                      <div><img src="r-angle.png" height="12px" alt="" /></div>
                     </div>
                   </div>
                   <div class="cal-days">
@@ -79,7 +90,7 @@
 
                     <div>10</div>
                     <div>11</div>
-                    <div>12</div>
+                    <div class="current-day">12</div>
                     <div>13</div>
                     <div>14</div>
                     <div>15</div>
@@ -127,372 +138,375 @@
                 <div class="cal-r-sec-body"></div>
               </div>
               <div class="cal-body-r-sec">
-                <div class="cal-body-r-sec-dates" >
+                <div class="cal-body-r-sec-dates">
+                  <span><img src="l-angle-bright.png" height="12px" alt="" /></span>
+                  <div>
                     <div>
-                        <div>
-                            <div>01</div>
-                            <div>SUN</div>
-                        </div>
-                        <div>
-                            <div>02</div>
-                            <div>MON</div>
-                        </div>
-                        <div>
-                            <div>03</div>
-                            <div>TUE</div>
-                        </div>
-                        <div>
-                            <div>04</div>
-                            <div>WED</div>
-                        </div>
-                        <div>
-                            <div>05</div>
-                            <div>THU</div>
-                        </div>
-                        <div>
-                            <div>06</div>
-                            <div>FRI</div>
-                        </div>
-                        <div>
-                            <div>07</div>
-                            <div>SAT</div>
-                        </div>
+                      <div>01</div>
+                      <div>SUN</div>
                     </div>
+                    <div>
+                      <div>02</div>
+                      <div>MON</div>
+                    </div>
+                    <div>
+                      <div>03</div>
+                      <div>TUE</div>
+                    </div>
+                    <div>
+                      <div>04</div>
+                      <div>WED</div>
+                    </div>
+                    <div>
+                      <div>05</div>
+                      <div>THU</div>
+                    </div>
+                    <div>
+                      <div>06</div>
+                      <div>FRI</div>
+                    </div>
+                    <div>
+                      <div>07</div>
+                      <div>SAT</div>
+                    </div>
+                  </div>
+                  <span><img src="r-angle-bright.png" height="12px" alt="" /></span>
                 </div>
-                <div class="cal-body-r-sec-container" >
-                    <div class="cal-body-r-sec-container-time">
-                        <p>Time</p>
-                        <div>09 AM</div>
-                        <div>10 AM</div>
-                        <div>11 AM</div>
-                    
-                        <div>12 PM</div>
-                        <div>01 PM</div>
-                        <div>02 PM</div>
-                        <div>03 PM</div>
-                        <div>04 PM</div>
-                        <div>05 PM</div>
-                        <div>06 PM</div>
-                        <div>07 PM</div>
-                        <div>08 PM</div>
-                        <div>09 PM</div>
-                    </div>
-                    <div class="cal-body-r-sec-container-content">
-                        <table>
-                            <tr>
-                                <td>
-                                    <div>Ravindra meeting</div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div>Ravindra meeting</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div>Ravindra meeting</div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div>Ravindra meeting</div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div>Ravindra meeting</div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div>Ravindra meeting</div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div>Ravindra meeting</div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div>Ravindra meeting</div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div>Ravindra meeting</div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                                <td>
-                                    <div></div>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
+                <div class="cal-body-r-sec-container">
+                  <div class="cal-body-r-sec-container-time">
+                    <p>Time</p>
+                    <div>09 AM</div>
+                    <div>10 AM</div>
+                    <div>11 AM</div>
+
+                    <div>12 PM</div>
+                    <div>01 PM</div>
+                    <div>02 PM</div>
+                    <div>03 PM</div>
+                    <div>04 PM</div>
+                    <div>05 PM</div>
+                    <div>06 PM</div>
+                    <div>07 PM</div>
+                    <div>08 PM</div>
+                    <div>09 PM</div>
+                  </div>
+                  <div class="cal-body-r-sec-container-content">
+                    <table>
+                      <tr>
+                        <td>
+                          <div class="card1">Ravindra meeting</div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div class="card2-pt">Ravindra meeting</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div class="card1">Ravindra meeting</div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div class="card1-pt">Ravindra meeting</div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div class="card2">Ravindra meeting</div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div class="card2">Ravindra meeting</div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div class="card2-pt">Ravindra meeting</div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div class="card2">Ravindra meeting</div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div class="card1">Ravindra meeting</div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                        <td>
+                          <div></div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
                 </div>
                 <div class="cal-buttons">
-                    <div>Cancle</div>
-                    <div>Submit</div>
+                  <div>Cancle</div>
+                  <div>Submit</div>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
         <div class="calender-navigation">
-          <img src="./home.png" alt="" />
-          <p><span><</span> 42 of 118 <span>></span></p>
+          <img src="./home.png" height="66px" alt="" />
+          <img src="./l-angle.png" alt="" />
+          <p>42 of 118</p>
+          <img src="./r-angle.png" alt="" />
         </div>
       </div>
       <div class="sidebar">
